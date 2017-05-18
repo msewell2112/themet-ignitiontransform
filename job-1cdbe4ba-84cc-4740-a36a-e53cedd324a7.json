@@ -1,0 +1,230 @@
+{
+  "id" : "1cdbe4ba-84cc-4740-a36a-e53cedd324a7",
+  "name" : "Tessi - Interface member and donations from Aptos Order to Tessitura",
+  "lastRun" : [ 2017, 5, 18, 12, 33, 36 ],
+  "enabled" : false,
+  "tasks" : [ {
+    "id" : "79939d0c-466b-45b1-b1b0-2dbb20931f6b",
+    "ordinal" : 1,
+    "taskParameters" : [ {
+      "id" : "a3f587d7-a9b5-4946-8d8e-9c0ae2afa3cb",
+      "ordinal" : 1,
+      "value" : "!{ftpuser}",
+      "desc" : "User to login to ftp",
+      "name" : "user",
+      "valueType" : 0,
+      "secret" : false,
+      "refId" : "4f75fa01-c582-49aa-8f20-1b48462a8b28"
+    }, {
+      "id" : "66de5c28-520a-455a-a873-e8b610c024d3",
+      "ordinal" : 2,
+      "value" : "BXXINgqvppOr17T72uw7VQ==",
+      "desc" : "Password to login to ftp",
+      "name" : "password",
+      "valueType" : 0,
+      "secret" : true,
+      "refId" : "48fbf631-e014-45ee-a8eb-298ac7d1fa21"
+    }, {
+      "id" : "87d5becd-0f8c-4744-b0f4-1011d5f8c6f2",
+      "ordinal" : 3,
+      "value" : "!{ftpurl}/input/TessituraOrdersCreated_.*.xml",
+      "desc" : "Url to file",
+      "name" : "url",
+      "valueType" : 0,
+      "secret" : false,
+      "refId" : "45c250b3-72b5-4d81-a392-6ab7c6f5709d"
+    }, {
+      "id" : "b1daf00d-47cb-4789-9f3a-4c7bf09f5992",
+      "ordinal" : 4,
+      "value" : "TessiOrderFile",
+      "desc" : "Key name of output file",
+      "name" : "outputKey",
+      "valueType" : 0,
+      "secret" : false,
+      "refId" : "201b77ea-8e35-4c3c-9f45-dd8afc123e10"
+    } ],
+    "job" : {
+      "id" : "1cdbe4ba-84cc-4740-a36a-e53cedd324a7",
+      "name" : "Tessi - Interface member and donations from Aptos Order to Tessitura",
+      "lastRun" : [ 2017, 5, 18, 12, 33, 36 ],
+      "enabled" : false,
+      "desc" : "Tessi - Interface member and donations from Aptos Order to Tessitura",
+      "status" : "READY",
+      "key" : "MET-00000008",
+      "environment" : "STAGING"
+    },
+    "name" : "Download File to Map Task",
+    "key" : "Core::DownloadFileToMapTask",
+    "clazz" : "com.ignitioncommerce.transform.tasks.core.DownloadFileToMapTask",
+    "enabled" : true,
+    "desc" : "Task used to download a file from FTP,SFTP,FTPS,Local and S3.",
+    "refId" : "84211b05-40ce-4939-874d-825b983c3bda",
+    "clazzType" : "Java",
+    "childTasks" : [ ],
+    "hasSubTask" : false,
+    "stopOnError" : true,
+    "reportOnError" : true
+  }, {
+    "id" : "ff83e0bd-d345-49e8-ae64-ed1b24c42da1",
+    "ordinal" : 2,
+    "taskParameters" : [ {
+      "id" : "cb1b0405-9e01-48d8-bfb2-1ca7bdf18f74",
+      "ordinal" : 1,
+      "value" : "9793111d-d037-41d8-8729-59ff731da7d1",
+      "desc" : "Node to target",
+      "name" : "node",
+      "valueType" : 3,
+      "secret" : false,
+      "refId" : "b0b883bb-8c3d-439d-ad3c-f09a4bfe11c3"
+    }, {
+      "id" : "7ff3c690-be83-4baa-ae4c-f92acc07a747",
+      "ordinal" : 2,
+      "value" : "/home/ftpuser/transform/themet/input/^TessituraOrdersCreated_.*.xml$",
+      "desc" : "Url to file",
+      "name" : "url",
+      "valueType" : 0,
+      "secret" : false,
+      "refId" : "49bfed33-b7ba-4fff-800c-03492846fcba"
+    }, {
+      "id" : "05848a42-50c7-4afd-b47c-4b698158f382",
+      "ordinal" : 3,
+      "value" : "",
+      "desc" : "User to login to ftp",
+      "name" : "user",
+      "valueType" : 0,
+      "secret" : false,
+      "refId" : "a369a683-6183-4d0e-88e7-f39e79bbaca1"
+    }, {
+      "id" : "6349e2fc-5bb1-4090-bbd2-d0efc7b19ed7",
+      "ordinal" : 4,
+      "value" : "",
+      "desc" : "Password to login to ftp",
+      "name" : "password",
+      "valueType" : 0,
+      "secret" : true,
+      "refId" : "d35b10ba-da27-436a-af85-1ecc45413347"
+    }, {
+      "id" : "cb1bd855-61a6-49f7-ad19-590722ee31ef",
+      "ordinal" : 5,
+      "value" : "TessiOrderFile",
+      "desc" : "Output Key",
+      "name" : "outputKey",
+      "valueType" : 0,
+      "secret" : false,
+      "refId" : "958d3cc1-9f65-4a33-82f1-7b56f4fb0a97"
+    } ],
+    "job" : {
+      "id" : "1cdbe4ba-84cc-4740-a36a-e53cedd324a7",
+      "name" : "Tessi - Interface member and donations from Aptos Order to Tessitura",
+      "lastRun" : [ 2017, 5, 18, 12, 33, 36 ],
+      "enabled" : false,
+      "desc" : "Tessi - Interface member and donations from Aptos Order to Tessitura",
+      "status" : "READY",
+      "key" : "MET-00000008",
+      "environment" : "STAGING"
+    },
+    "name" : "Remote file to map task",
+    "key" : "Core::NodeFileToMapTask",
+    "comment" : "Look for Tessi Order File",
+    "clazz" : "com.ignitioncommerce.transform.tasks.core.NodeFileToMapTask",
+    "enabled" : false,
+    "desc" : "Copy file from remote to map.",
+    "refId" : "4c4b17e1-3904-473c-8784-0b53212ad251",
+    "clazzType" : "Java",
+    "childTasks" : [ ],
+    "hasSubTask" : false,
+    "stopOnError" : true,
+    "reportOnError" : true
+  }, {
+    "id" : "795d9e3e-204c-460b-a519-88db5e02c8fb",
+    "ordinal" : 3,
+    "taskParameters" : [ {
+      "id" : "bbb3eb94-a07d-4009-958d-1362bbc7f00b",
+      "ordinal" : 1,
+      "value" : "TessiOrderFile",
+      "desc" : "Key name of input file\n",
+      "name" : "inputKey",
+      "valueType" : 0,
+      "secret" : false,
+      "refId" : "33b71961-09fb-4f69-9df8-46721a14b8a4"
+    }, {
+      "id" : "1348c82c-639d-4ad7-92f3-613b88bc18e4",
+      "ordinal" : 2,
+      "value" : "TessiOrderMap",
+      "desc" : "Key name to hold return value in dictionary",
+      "name" : "outputKey",
+      "valueType" : 0,
+      "secret" : false,
+      "refId" : "f1628808-0116-4d32-bff0-af0cb53d06b2"
+    }, {
+      "id" : "157cd83a-eccd-430c-983b-bc7e6feae3b5",
+      "ordinal" : 4,
+      "value" : "/Orders/Order",
+      "desc" : "Node to Break the row on",
+      "name" : "rowIndicator",
+      "valueType" : 0,
+      "secret" : false,
+      "refId" : "be88cc2e-5ba9-4277-a484-1d8146b78565"
+    } ],
+    "job" : {
+      "id" : "1cdbe4ba-84cc-4740-a36a-e53cedd324a7",
+      "name" : "Tessi - Interface member and donations from Aptos Order to Tessitura",
+      "lastRun" : [ 2017, 5, 18, 12, 33, 36 ],
+      "enabled" : false,
+      "desc" : "Tessi - Interface member and donations from Aptos Order to Tessitura",
+      "status" : "READY",
+      "key" : "MET-00000008",
+      "environment" : "STAGING"
+    },
+    "name" : "XML to Map Task",
+    "key" : "Core::XmlToMapTask",
+    "clazz" : "com.ignitioncommerce.transform.tasks.core.XmlToMapTask",
+    "enabled" : true,
+    "desc" : "Task used to read xml file into the dictionary",
+    "refId" : "4ca3d6e5-23fc-4d6a-beb2-09f0c9a5c2f3",
+    "clazzType" : "Java",
+    "childTasks" : [ ],
+    "hasSubTask" : false,
+    "stopOnError" : true,
+    "reportOnError" : true
+  }, {
+    "id" : "9e391acc-2f3c-41ff-a0e6-be443d16fb7f",
+    "ordinal" : 4,
+    "taskParameters" : [ {
+      "id" : "32e7258c-8853-4469-a569-a91fb8f1b948",
+      "ordinal" : 1,
+      "value" : "/*\n * Takes an Orders hash generated from APTOS Order xml and walks through\n * logic to determine what information should be sent to Tessitura through\n * Nomos for membership and donation information\n */\nvar inDebug = dict.inDebug; \nload('!{ThisHost}/js/global.js');\n\nvar root = new java.util.HashMap();\nvar orderIterator = ICT.MAP.ITERATOR('TessiOrderMap');\n\nvar invoices = new java.util.ArrayList();\nvar seq = 1;\nvar isReturn = false;\nvar fileName = dict.get('TessiOrderFile_ORIG_FILE_NAME_');\nvar pos = fileName.indexOf('_');\nvar pos2 = fileName.indexOf('_', pos+1);\nvar shipDate = fileName.substring(pos+1, pos2);\nvar inDebug = dict.inDebug;\nvar interfaceName = '';\n\nvar donationIDs = ['80002644','80002645','80025270','20099990'];\nvar membershipIDs = ['80038754','80038755','80038756','80038757','80038762','80038763','80038764','80038765'];\nwhile (orderIterator.hasNext()) {\n    var order = orderIterator.next();\n    var orderStatus = order.OrderStatusId;\n    var customerExternal = order.OrderCustomer.CustomerExternalID;\n    // we have to check for list as it could be a list or an object\n    var itemList = ICT.LIST(order.OrderItems.Item);\n    if (itemList.size() === 0) continue;\n    var oiIter = itemList.iterator();\n    while(oiIter.hasNext()) {\n        var orderItem = oiIter.next();\n        var productID = orderItem.ItemProduct.ProductID;\n        var isMembership = (membershipIDs.indexOf(productID) > -1);\n        var isDonation = (donationIDs.indexOf(productID) > -1);\n\n        if (isDonation === false && isMembership === false) continue;\n        \n        var constituentID = order.CustomerExternalID;\n        var customerInfo = parseOption2(orderItem.Option2);\n        try {\n            var calledSave = false;\n            if (constituentID === null || constituentID === '') {\n                // call nomos to get constituentID\n                constituentID = constituentSave(constituentID, customerInfo['Member Name'], customerInfo['Member Address 1'],\n                    customerInfo['Member Address 2'], customerInfo.City, customerInfo.State,\n                    customerInfo['Zip Code'], customerInfo.Country, customerInfo['Phone Number'],\n                    customerInfo.Birthday, customerInfo['Anniversary Date']);\n                calledSave = true;\n            } \n            // Authenticate with Nomos\n            var nameParts = customerInfo['Member Name'].split(' ');\n            var token = nomosToken(constituentID, nameParts[nameParts.length-1]);\n            var detail = constituentDetail(token);\n            // check if we are renewing\n            var complimentaryMembershipLevel = detail.ComplimentaryMembershipLevel.EndDate;\n            var paidMembershipLevel = detail.PaidMembershipLevel.EndDate;\n            var isRenewing = false;\n            // did we already save?\n            if (calledSave === false) {\n                if (complimentaryMembershipLevel !== null) {\n                    var cml = parseDateTime(complementaryMembershipLevel);\n                    if (cml.getTime() < now.getTime()) {\n                        isRenewing = true;\n                    }    \n                }\n                if (paidMembershipLevel !== null) {\n                    var pmd = parseDateTime(paidMembershipLevel);\n                    if (pmd.getTime() < now.getTime()) {\n                        isRenewing = true;\n                    }\n                }\n                if (isRenewing) {\n                    if (inDebug) {\n                        print('isRenewing');\n                    }\n                    constituentID = constituentSave(customerInfo['Member Name'], customerInfo['Member Address 1'],\n                        customerInfo['Member Address 2'], customerInfo.City, customerInfo.State,\n                        customerInfo['Zip Code'], customerInfo.Country, customerInfo['Phone Number'],\n                        customerInfo.Birthday, customerInfo['Anniversary Date']);                       \n                }\n            }\n            var cartItem = shoppingCart(token, productID);\n            if (cartItem !== null) {\n                if (postOrder(token,cartItem)) {\n                \n                    var customerPayload = {\n                        CustomerID: order.OrderCustomer.CustomerID,\n                        CustomerName: order.OrderCustomer.CustomerName,\n                        CustomerFirstName: order.OrderCustomer.CustomerFirstName,\n                        CustomerLastName: order.OrderCustomer.CustomerLastName,\n                        CustomerEmail: order.OrderCustomer.CustomerEmail\n                    };\n                    updateCustomerTierGroup(customerPayload, 4);\n                }\n            }\n        } catch (err) {\n            var errMessage;\n            if (err instanceof java.io.IOException) {\n                errMessage = 'A timeout occurred calling interface ' + interfaceName + \n                    ' while processing ' + fileName + '.  Order No.: ' + order.OrderNumber;\n            } else {\n                errMessage = 'An exception occurred while processing ' + \n                    fileName + '.  Order No.: ' + order.OrderNumber + '  Exception: ' + err;\n            }\n            ICT.TASK_ERROR(dict, 'Tessitura Error', errMessage);\n        }\n    }\n}\n\nfunction postOrder(token,cartItem) {\n    if (inDebug) {\n        print('postOrder('+token+','+cartItem+')');\n    }\n    interfaceName = 'cerberus/order';\n   var params = {\n        \"Authorization\": \"Bearer \" + token,\n        \"Accept\": \"application/json\",\n        \"Content-Type\": \"application/json\",\n        \"Timeout\": 100000\n    };\n    \n    var url = '!{NomosBaseURL}/cerberus/order';\n    \n    var totalAmount = cartItem.Quantity * cartItem.Price;\n    \n    var payload = {\n        EmployeeId: 34140,\n        PromotionCode: 0,\n        Platform: 'Tablet',\n        Location: 'MOBL',\n        Channel: 12,\n        Solicitor: 'allrea',\n        Payments: [{\n            Type: 'Merch Transfer',\n            MerchTransfer: {\n                MethodAmount: totalAmount\n            },\n            MethodAmount: totalAmount,\n            IntegrationId: 662607004\n        }],\n        ShoppingCart: [{\n            ActivateAs15Month: cartItem.ActivateAs15Month,\n            AllowSecondName: cartItem.AllowSecondName,\n            AllowVariablePricing: cartItem.AllowVariablePricing,\n            IsActive: cartItem.IsActive,\n            IsAddressRequired: cartItem.IsAddressRequired,\n            IsAutoRenewable: cartItem.IsAutoRenewable,\n            IsPostalCodeRequired: cartItem.IsPostalCodeRequired,\n            IsRenewable: cartItem.IsRenewable,\n            IsTaxable: cartItem.IsTaxable,\n            TaxIncluded: cartItem.TaxIncluded,\n            AltZoneDescription: cartItem.AltZoneDescription,\n            CategoryDesc: cartItem.CategoryDesc,\n            Description: cartItem.Description,\n            Location: cartItem.Location,\n            LocationCode: cartItem.LocationCode,\n            LongDescription: cartItem.LongDescription,\n            PerformanceCode: cartItem.PerformanceCode,\n            PerformanceDesc: cartItem.PerformanceDesc,\n            PriceTypeDesc: cartItem.PriceTypeDesc,\n            PrintDescription: cartItem.PrintDescription,\n            SeasonDesc: cartItem.SeasonDesc,\n            TessiDescription: cartItem.TessiDescription,\n            UnitDescription: cartItem.UnitDescription,\n            SKU: cartItem.SKU,\n            TessiApiCallPref: cartItem.TessiApiCallPref,\n            available: cartItem.available,\n            PerfDate: cartItem.PerfDate,\n            ItemCode: cartItem.ItemCode,\n            EffectiveDate: cartItem.EffectiveDate,\n            ExpirationDate: cartItem.ExpirationDate,\n            AvailCount: cartItem.AvailCount,\n            gid: cartItem.gid,\n            LinkedProductId: cartItem.LinkedProductId,\n            LinkId: cartItem.LinkId,\n            PerformanceId: cartItem.PerformanceId,\n            PriceType: cartItem.PriceType,\n            PurchaseLimit: cartItem.PurchaseLimit,\n            Quantity: cartItem.Quantity,\n            rank: cartItem.rank,\n            TessiFeeId: cartItem.TessiFeeId,\n            TessiFundId: cartItem.TessiFundId,\n            ZoneNumber: cartItem.ZoneNumber,\n            TessiMembershipLevelNo: cartItem.TessiMembershipLevelNo,\n            HeaderTemplateId: cartItem.HeaderTemplateId,\n            BasePrice: cartItem.BasePrice,\n            Price: cartItem.Price,\n            UnitCost: cartItem.UnitCost,\n            UnitCostOld: cartItem.UnitCostOld,\n            Zones: cartItem.Zones\n        }]\n    };\n    \n    var responseObj = JSON.parse(ICT.REST.POST(url, JSON.stringify(payload), params));\n    if (responseObj.OrderNo) {\n        if (inDebug) {\n            print('postOrder return -> true');\n        }\n        return true;\n    }\n    if (inDebug) {\n        print('postOrder return -> false');\n    }\n    return false;\n}\n\nfunction constituentDetail(token) {\n    if (inDebug) {\n        print('constituentDetail('+token+')');\n    }\n    interfaceName = 'constituent/details';\n    var url = '!{NomosBaseURL}/melos/constituent/details';\n    var params = {\n        \"Authorization\": \"Bearer \" + token,\n        \"Accept\": \"application/json\",\n        \"Content-Type\": \"application/json\",\n        \"Timeout\": 100000\n    };\n\n    var responseObj = JSON.parse(ICT.REST.GET(url, params));\n\n    if (responseObj.Status && responseObj.Status.Success === true) {\n        if (inDebug) {\n            print('constituentDetail return -> ' + JSON.stringify(responseObj.Payload));\n        }\n        return responseObj.Payload;\n    }    \n    if (inDebug) {\n        print('constituentDetail return -> null');\n    }\n    return null;\n}\n\nfunction constituentSave(constituentID,name,address1,address2,city,state,postal,country,phone,birthday,anniversary) {\n    if (inDebug) {\n        print('constituentSave('+constituentID+','+name+','+address1+','+address2+\n            ','+city+','+state+','+postal+','+country+','+phone+','+birthday+','+anniversary+')');\n    }\n    interfaceName = 'constituent/save';\n    var nameParts = name.split(' ');\n    var payload = {\n\t    Name: nameParts[nameParts.length-1],\n\t    PhoneNumbers: [{\n\t       Number: phone,\n\t       Type: {\n\t           Name: 'Phone 1'\n\t       }\n\t    }],\n\t    Addresses: [{\n\t\t    Street1: address1,\n\t\t    Street2: address2,\n    \t\tCity: city,\n\t\t    State: {\n\t\t\t    Name: state,\n\t\t\t    Country: {\n\t\t\t\t    Name: country\n\t\t\t    }\n\t\t\t},\n\t\t    Country: {\n\t\t\t    Name: country\n\t\t    },\n\t\t    PostalCode: postal,\n\t\t    IsPrimary: true,\n\t\t    Label: true,\n\t\t    Type: {\n\t\t\t    Name: \"Home Address\"\n\t\t    }\n\t\t}],\n\t    Constituents: [{\n    \t\tDisplayName: name,\n    \t\tFirstName: nameParts[0],\n    \t\tMiddleName: null,\n    \t\tLastName: nameParts[nameParts.length-1],\n    \t\tPrefix: {\n    \t\t\tName: \"\",\n    \t\t\tId: -1\n    \t\t},\n    \t\tSuffix: {\n    \t\t\tName: \"\",\n    \t\t\tId: -1\n    \t\t},\n    \t\tType: {\n    \t\t\tName: \"Individual\",\n    \t\t\tId: 1\n    \t\t}\n    \t}],\n\t    Source: \"Aptos\"\n    };\n\n    var url = '!{NomosBaseURL}/melos/constituent/save';\n    var token = constituentID;\n    if (constituentID === null || constituentID === '') {\n        constituentID = '!{NomosProviderToken}';\n    }\n    var params = {\n        \"Authorization\": \"Bearer \" + constituentID,\n        \"Accept\": \"application/json\",\n        \"Content-Type\": \"application/json\",\n        \"Timeout\": 100000\n    };\n    var responseObj = JSON.parse(ICT.REST.POST(url, JSON.stringify(payload), params)); \n    if (responseObj.Status && responseObj.Status.Success === true) {\n        if (inDebug) {\n            print('shoppingCart return -> ' + responseObj.Payload.Id);\n        }\n        return responseObj.Payload.Id;\n    }       \n    if (inDebug) {\n        print('shoppingCart return -> null');\n    }\n    return null;\n}\n\nfunction shoppingCart(token, productID) {\n    if (inDebug) {\n        print('shoppingCart('+','+productID+')');\n    }\n    interfaceName = 'cerberus/cart';\n    var params = {\n        \"Authorization\": \"Bearer \" + token,\n        \"Accept\": \"application/json\",\n        \"Content-Type\": \"application/json\",\n        \"Timeout\": 100000\n    };\n    \n    var url = '!{NomosBaseURL}/cerberus/cart';\n    var payload = {\n        CacheExpiry: -1,\n        CartVersion: \"Tessi\",\n        Categories: null,\n        Location: \"GRTH\",\n        Type: \"Tablet\",\n        ZipCode: \"00000\" \n    };\n    var item = null;\n    var responseObj = JSON.parse(ICT.REST.POST(url, JSON.stringify(payload), params));\n    if (responseObj.Status && responseObj.Status.Success === true) {\n        var arrayObj = responseObj.Payload;\n        for (var i=0;i<arrayObj.length;i++) {\n            if ('SKU' in arrayObj[i] && arrayObj[i].SKU === productID) {\n                item = arrayObj[i];\n                break;\n            }\n        }\n    }    \n    \n    if (inDebug) {    \n        print('shoppingCart return -> ' + item);\n    }\n    return item;\n}\n\nfunction parseDateTime(dateTime) {\n    if (inDebug) {\n        print('parseDateTime('+dateTime+')');\n    }\n    var sdf = new java.text.SimpleDateFormat(\"yyyy-MM-dd'T'HH:mm:ssXXX\");\n    if (inDebug) {\n        print('parseDateTime return -> ' + sdf.parse(dateTime));\n    }\n    return sdf.parse(dateTime);\n}\n\nfunction constituentDetail(token) {\n    if (inDebug) {\n        print('constituentDetail('+token+')');\n    }\n    interfaceName = 'constituent/details';\n    var url = '!{NomosBaseURL}/melos/constituent/details';\n    var params = {\n        \"Authorization\": \"Bearer \" + token,\n        \"Accept\": \"application/json\",\n        \"Content-Type\": \"application/json\",\n        \"Timeout\": 100000\n    }\n\n    var responseObj = JSON.parse(ICT.REST.GET(url, params));\n\n    if (responseObj.Status && responseObj.Status.Success === true) {\n        if (inDebug) {\n            print('constituentDetail return -> ' + JSON.stringify(responseObj.Payload));\n        }\n        return responseObj.Payload;\n    }    \n    if (inDebug) {    \n        print('constituentDetail return -> null');\n    }    \n    return null;\n}\n\nfunction parseOption2(xml) {\n    if (inDebug) {\n        print('parseOption2: ' + xml);\n    }\n    var keyValue = {};\n    var doc = ICT.XML.DOC(xml);\n    var nodeList = doc.getElementsByTagName('question');\n    for (var i=0;i<nodeList.getLength();i++) {\n        var node = nodeList.item(i);\n        if (node.getNodeType() == org.w3c.dom.Node.ELEMENT_NODE) {\n            var element = node;\n            var name = element.getElementsByTagName(\"value\").item(0).getTextContent();\n            var value = element.getElementsByTagName(\"answer\").item(0).getTextContent();\n            keyValue[name] = value;\n        }\n    }\n    if (inDebug) {\n        print('parseOption2 return -> ' + keyValue);\n    }\n    return keyValue;\n}\n\nfunction nomosToken(memberId, lastName) {\n    if (inDebug) {\n        print('nomosToken('+memberId+','+lastName+')');\n    }\n    var url = '!{NomosBaseURL}/token';\n    interfaceName = '/token';\n    var payload = {};\n    payload.memberid = memberId;\n    payload.lastname = lastName;\n    \n    var params = {\n        \"Authorization\": \"Bearer !{NomosProviderToken}\",\n        \"Accept\": \"application/json\",\n        \"Content-Type\": \"application/json\",\n        \"Timeout\": 100000\n    };\n    \n    var responseObj;\n    try {\n        responseObj = JSON.parse(ICT.REST.POST(url, JSON.stringify(payload), params));\n    } catch (err) {\n        if (err instanceof java.io.IOException) {\n            // timeout\n            dict.put(ICT.NO_DELETE, true);\n            var errMessage = 'Unable to communicate with Nomos during ' +\n                'login call.  memberid[' + memberId + '] lastname[' + lastName + ']';\n            ICT.TASK_ERROR(dict, 'login to nomos communication failure', errMessage);\n        }        \n    }\n    if (responseObj.Status && responseObj.Status.Success === true) {\n        if (inDebug) {\n            print('nomosToken return -> ' + responseObj.Payload.AccessToken);\n        }\n        return responseObj.Payload.AccessToken;\n    }\n    if (inDebug) {\n        print('nomosToken return -> null');\n    }\n    return null;    \n}\n\nfunction updateCustomerTierGroup(customerInfo, tierGroup) {\n    if (inDebug) {\n        print('updateCustomerTierGroup('+customerInfo+','+tierGroup+')');\n    }    \n    var xmlStr = \"<Customers>\";\n    xmlStr += \"<Customer>\";\n    xmlStr += \"<CustomerID>\"+customerInfo.CustomerID+\"</CustomerID>\";\n    xmlStr += \"<CustomerName>\"+customerInfo.CustomerName+\"</CustomerName>\";\n    xmlStr += \"<CustomerFirstName>\"+customerInfo.CustomerFirstName+\"</CustomerFirstName>\";\n    xmlStr += \"<CustomerLastName>\"+customerInfo.CustomerLastName+\"</CustomerLastName>\";\n    xmlStr += \"<CustomerEmail>\"+customerInfo.CustomerEmail+\"</CustomerEmail>\";\n    xmlStr += \"<CustomerTierGroups>\";\n    xmlStr += \"  <CustomerTierGroup>\";\n    xmlStr += \"    <TierGroupID>\"+tierGroup+\"</TierGroupID>\";\n    xmlStr += \"  </CustomerTierGroup>\";\n    xmlStr += \"</CustomerTierGroups>\";\n    xmlStr += \"</Customer>\";\n    xmlStr += \"</Customers>\";\n    var payload = 'ClientName=!{AptosClientName}&Guid=!{AptosGUID}&InboundXML=' + encodeURIComponent(xmlStr)+\n        '&ProcessingOptions=';\n  \n    var url = '!{AptosHost}/CustomerService.asmx/SetCustomersAdvanced';\n    var params = {\n        \"Content-Type\": \"application/x-www-form-urlencoded\"\n    };\n\n    var response = ICT.REST.POST(url, payload, params);\n\n    if (response.equalsIgnoreCase('ERROR') === false) {\n        if (inDebug) {\n            print('updateCustomerTierGroup return -> true');\n        }        \n        return true;\n    }\n    if (inDebug) {\n        print('updateCustomerTierGroup return -> false');\n    }     \n    return false;\n}\n\n",
+      "desc" : "Script to execute",
+      "name" : "script",
+      "valueType" : 2,
+      "secret" : false,
+      "refId" : "61734d1c-1ff6-4a2b-a251-00f3bd76b9ed"
+    } ],
+    "job" : {
+      "id" : "1cdbe4ba-84cc-4740-a36a-e53cedd324a7",
+      "name" : "Tessi - Interface member and donations from Aptos Order to Tessitura",
+      "lastRun" : [ 2017, 5, 18, 12, 33, 36 ],
+      "enabled" : false,
+      "desc" : "Tessi - Interface member and donations from Aptos Order to Tessitura",
+      "status" : "READY",
+      "key" : "MET-00000008",
+      "environment" : "STAGING"
+    },
+    "name" : "Script Task",
+    "key" : "Core::ScriptTask",
+    "comment" : "",
+    "clazz" : "com.ignitioncommerce.transform.tasks.core.ScriptTask",
+    "enabled" : true,
+    "desc" : "Task used to execute custom javascript",
+    "refId" : "f5d44f40-cbd4-45fa-b45f-b062e546ad0f",
+    "clazzType" : "Java",
+    "childTasks" : [ ],
+    "hasSubTask" : false,
+    "stopOnError" : true,
+    "reportOnError" : true
+  } ],
+  "desc" : "Tessi - Interface member and donations from Aptos Order to Tessitura",
+  "status" : "READY",
+  "key" : "MET-00000008",
+  "environment" : "STAGING"
+}
